@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+    box-sizing: border-box;
+    margin: 0;
+		padding: 0;
+		background-size: contain;
+  	background-repeat: no-repeat;
+		background-position: center;
+		background-color: rgb(10,85,135);
+		font-family: 'Roboto', sans-serif;
+		font-variant: small-caps;
+		text-align: center;
+		color: white;
+}
+.title{		
+	font-size: 2rem;
+}
+.game{
+	width: 90vw; height: 90vh;
+	position: absolute;
+	left: 50%; top: 50%;
+	transform: translate(-50%,-50%); 
+	display: flex;
+  flex-wrap: wrap;
+}
+.game>div {
+	background-color: white;
+  border: 15px solid rgb(10,85,135);
+  flex-basis: 15%;
+	flex-grow: 1;
+	height: 33.33%;
+	border-radius: 10%;
+}
+.game>div:hover{
+	transition: all 0.3s linear;
+	box-shadow: 0px 0px 25px 0px #4b0175;
+
+}
+@media (orientation: portrait) {
+  .game>div{
+    flex-basis: 25vw;
+		height: 15vh;
+		border: 5px solid rgb(10,85,135);
+  }
+}
+.chase {
+    background-image: url(./patrol/chase.png);
+}
+.everest {
+		background-image: url(./patrol/everest.png);
+}
+.marshall {
+		background-image: url(./patrol/marshall.png);
+}
+.rocky {
+		background-image: url(./patrol/rocky.png);
+}
+.rubble {
+		background-image: url(./patrol/rubble.png);
+}
+.ryder {
+		background-image: url(./patrol/ryder.png);
+}
+.skye {
+		background-image: url(./patrol/skye.png);
+}
+.tracker {
+		background-image: url(./patrol/tracker.png);
+}
+.zuma {
+		background-image: url(./patrol/zuma.png);
+}
+.off {
+  background-color: rgb(10,85,135);
+}
+.logo {
+  background-image: url(./patrol/logo.png);	
+}
