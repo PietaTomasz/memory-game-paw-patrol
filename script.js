@@ -1,4 +1,4 @@
-﻿const cardsColor = ['chase', 'chase', 'everest', 'everest', 'marshall', 'marshall', 'rocky', 'rocky', 'rubble', 'rubble', 'ryder', 'ryder', 'skye', 'skye', 'tracker', 'tracker', 'zuma', 'zuma'];
+﻿const dogs = ['chase', 'chase', 'everest', 'everest', 'marshall', 'marshall', 'rocky', 'rocky', 'rubble', 'rubble', 'ryder', 'ryder', 'skye', 'skye', 'tracker', 'tracker', 'zuma', 'zuma'];
 
 let cards = document.querySelectorAll('.game>div');
 cards = [...cards];
@@ -42,9 +42,9 @@ const clickCard = function() {
 
 const init = function() {
 	cards.forEach( card => {
-		const position = Math.floor(Math.random()*cardsColor.length);
-		card.classList.add(cardsColor[position]);
-		cardsColor.splice(position,1);
+		const position = Math.floor(Math.random()*dogs.length);
+		card.classList.add(dogs[position]);
+		dogs.splice(position,1);
  });
 	setTimeout( function() {
 		cards.forEach( card => {
